@@ -138,6 +138,7 @@ members = [
     "utils/sleep-inhibitor",
     "utils/approval-presets",
     "utils/oss",
+    "utils/os-info",
     "utils/output-truncation",
     "utils/path-utils",
     "utils/plugins",
@@ -297,6 +298,7 @@ codex-utils-git-discovery = { path = "utils/git-discovery" }
 codex-utils-home-dir = { path = "utils/home-dir" }
 codex-utils-image = { path = "utils/image" }
 codex-utils-json-to-toml = { path = "utils/json-to-toml" }
+codex-utils-os-info = { path = "utils/os-info" }
 codex-utils-oss = { path = "utils/oss" }
 codex-utils-output-truncation = { path = "utils/output-truncation" }
 codex-utils-path = { path = "utils/path-utils" }
