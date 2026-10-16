@@ -1,0 +1,1 @@
+{"steps": [{"calls": [{"cmd": "echo verify-tool-marker"}, {"cmd": "printf 'a\\nb\\n' | wc -l"}]}, {"message": "verify-codex-exec: tool calls finished"}]}
