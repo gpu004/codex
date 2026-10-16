@@ -22,7 +22,7 @@ codex-plugin = { workspace = true }
 codex-protocol = { workspace = true }
 codex-state = { workspace = true }
 codex-utils-path-uri = { workspace = true }
-os_info = { workspace = true }
+codex-utils-os-info = { workspace = true }
 serde = { workspace = true, features = ["derive"] }
 serde_json = { workspace = true }
 sha1 = { workspace = true }

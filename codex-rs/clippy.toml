@@ -6,6 +6,7 @@ await-holding-invalid-types = [
     "tokio::sync::RwLockWriteGuard",
 ]
 disallowed-methods = [
+    { path = "os_info::get", reason = "Use codex_utils_os_info::os_info(); OS discovery spawns subprocesses on Linux and must run once per process." },
     { path = "ratatui::style::Color::Rgb", reason = "Use ANSI colors, which work better in various terminal themes." },
     { path = "ratatui::style::Color::Indexed", reason = "Use ANSI colors, which work better in various terminal themes." },
     { path = "ratatui::style::Stylize::white", reason = "Avoid hardcoding white; prefer default fg or dim/bold. Exception: Disable this rule if rendering over a hardcoded ANSI background." },

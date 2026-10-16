@@ -2012,8 +2012,8 @@ dependencies = [
  "codex-protocol",
  "codex-state",
  "codex-utils-absolute-path",
+ "codex-utils-os-info",
  "codex-utils-path-uri",
- "os_info",
  "pretty_assertions",
  "serde",
  "serde_json",
@@ -2562,6 +2562,7 @@ dependencies = [
  "codex-utils-absolute-path",
  "codex-utils-cargo-bin",
  "codex-utils-cli",
+ "codex-utils-os-info",
  "codex-utils-path",
  "codex-utils-path-uri",
  "codex-utils-process",
@@ -3863,6 +3864,7 @@ dependencies = [
  "codex-secrets",
  "codex-terminal-detection",
  "codex-utils-cargo-bin",
+ "codex-utils-os-info",
  "codex-utils-process",
  "codex-utils-template",
  "codex-workload-identity",
@@ -3872,7 +3874,6 @@ dependencies = [
  "keyring",
  "once_cell",
  "opentelemetry_sdk",
- "os_info",
  "pretty_assertions",
  "rand 0.9.3",
  "regex-lite",
@@ -4232,6 +4233,7 @@ dependencies = [
  "codex-http-client",
  "codex-protocol",
  "codex-utils-absolute-path",
+ "codex-utils-os-info",
  "codex-utils-stream-parser",
  "codex-utils-string",
  "eventsource-stream",
@@ -4244,7 +4246,6 @@ dependencies = [
  "opentelemetry-otlp",
  "opentelemetry-semantic-conventions",
  "opentelemetry_sdk",
- "os_info",
  "pretty_assertions",
  "reqwest 0.12.28",
  "seccompiler",
@@ -5068,6 +5069,16 @@ dependencies = [
  "pretty_assertions",
  "serde_json",
  "toml 0.9.11+spec-1.1.0",
+]
+
+[[package]]
+name = "codex-utils-os-info"
+version = "0.0.0"
+dependencies = [
+ "codex-utils-cargo-bin",
+ "os_info",
+ "pretty_assertions",
+ "tempfile",
 ]
 
 [[package]]

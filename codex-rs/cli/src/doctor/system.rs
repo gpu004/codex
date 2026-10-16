@@ -20,7 +20,7 @@ struct SystemCheckInputs {
 
 impl SystemCheckInputs {
     fn detect() -> Self {
-        let info = os_info::get();
+        let info = codex_utils_os_info::os_info();
         let locale_env = LOCALE_ENV_VARS
             .iter()
             .filter_map(|name| {

@@ -1,0 +1,19 @@
+[package]
+name = "codex-utils-os-info"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+os_info = { workspace = true }
+
+[dev-dependencies]
+codex-utils-cargo-bin = { workspace = true }
+pretty_assertions = { workspace = true }
+tempfile = { workspace = true }
+
+[lib]
+doctest = false

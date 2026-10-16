@@ -44,7 +44,7 @@ pub(super) fn check(cwd: &Path) -> DoctorCheck {
         return DoctorCheck::new(ID, "git", CheckStatus::Ok, "no Git worktree is active");
     };
     if matches!(
-        os_info::get().version(),
+        codex_utils_os_info::os_info().version(),
         Version::Semantic(_, _, build) if *build < 22_621
     ) {
         return DoctorCheck::new(

@@ -132,7 +132,11 @@ pub(super) async fn append_desktop_update(
     let desktop_update_url = std::env::var_os("HOME")
         .map(PathBuf::from)
         .map(|home| {
-            macos_desktop_update_url(&home, application, &os_info::get().version().to_string())
+            macos_desktop_update_url(
+                &home,
+                application,
+                &codex_utils_os_info::os_info().version().to_string(),
+            )
         })
         .unwrap_or_else(|| DESKTOP_UPDATE_URL.to_string());
     #[cfg(target_os = "windows")]

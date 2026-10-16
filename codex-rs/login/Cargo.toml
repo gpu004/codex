@@ -25,7 +25,7 @@ codex-utils-template = { workspace = true }
 codex-workload-identity = { workspace = true }
 http = { workspace = true }
 once_cell = { workspace = true }
-os_info = { workspace = true }
+codex-utils-os-info = { workspace = true }
 rand = { workspace = true }
 serde = { workspace = true, features = ["derive"] }
 serde_json = { workspace = true }
